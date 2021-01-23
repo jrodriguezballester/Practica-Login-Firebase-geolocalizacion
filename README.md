@@ -56,3 +56,14 @@ cada uno de vosotros elija. El segundo botón mostrará nuestra ubicación en ti
 <hr/>
 
 ## Solucion
+
+### - Añadir Firebase
+
+- Crear proyecto consola firebase https://console.firebase.google.com/u/0/
+
+- Añadir Firebase a la aplicación. Clickamos en Android
+  - Seguimos las instrucciones de Firebase
+    - (añadir fichero google-services.josn)
+    - (añadir SDK)
+- Añadir en gradle de modulo en plugins  id 'kotlin-android-extensions'
+- Importante sincronizar ambos gradle
