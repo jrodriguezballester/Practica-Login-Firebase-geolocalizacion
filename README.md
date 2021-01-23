@@ -59,7 +59,7 @@ cada uno de vosotros elija. El segundo botón mostrará nuestra ubicación en ti
 
 ### - Añadir Firebase
 
-- Crear proyecto consola firebase https://console.firebase.google.com/u/0/
+- Crear proyecto consola firebase <https://console.firebase.google.com/u/0/>
 
 - Añadir Firebase a la aplicación. Clickamos en Android
   - Seguimos las instrucciones de Firebase
@@ -67,3 +67,16 @@ cada uno de vosotros elija. El segundo botón mostrará nuestra ubicación en ti
     - (añadir SDK)
 - Añadir en gradle de modulo en plugins  id 'kotlin-android-extensions'
 - Importante sincronizar ambos gradle
+
+### - Añadir Autentificacion por email/password
+
+Desde la consola de Firebase seleccionar
+
+- Autentificacion --> Sign Metodo --> Habilitar email/contraseña
+
+<https://firebase.google.com/docs/auth/android/start?authuser=0#kotlin+ktx>
+
+- en gradle (app)
+  - implementation 'com.google.firebase:firebase-auth-ktx'
+- Importante sincronizar gradle
+- Crear AuthActivity
