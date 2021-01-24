@@ -80,3 +80,12 @@ Desde la consola de Firebase seleccionar
   - implementation 'com.google.firebase:firebase-auth-ktx'
 - Importante sincronizar gradle
 - Crear AuthActivity
+- Sincronizar gradle (Ya lo habia dicho?, pues por si acaso sincroniza gradle)
+
+### - Implementar codigo AuthActivity
+
+- Registrarse
+  - Validar correo
+  - Validar contraseña
+  - Si se registra continua la app
+  - Mostrar informacion en los casos negativos
