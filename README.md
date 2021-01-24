@@ -55,7 +55,7 @@ cada uno de vosotros elija. El segundo botón mostrará nuestra ubicación en ti
 
 <hr/>
 
-## Solucion
+## Solucion (paso a paso)
 
 ### - Añadir Firebase
 
@@ -89,3 +89,13 @@ Desde la consola de Firebase seleccionar
   - Validar contraseña
   - Si se registra continua la app
   - Mostrar informacion en los casos negativos
+- Logearse
+  - Mismo codigo que registrarse, cambiando la funcion de Firebase createUserWith... por signInWith... y los mensajes informativos
+
+### - Implementar MainActivity
+
+Para la primera parte de la practica.
+
+- Boton Log Out
+  - Desconecta (singOut) de Firebase
+  - Llamamos a la AuthActivity (mejor que onBackPressed())
