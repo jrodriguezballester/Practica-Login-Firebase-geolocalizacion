@@ -107,7 +107,7 @@ Para la primera parte de la practica.
   Esto crea
   - Un Activity
   - Un layout
-  - Values/google_maps_api.xml
+  - Values/google_maps_api.xml   <-- En este fichero hay que poner la clave
 - Ir a google Api Console
   <https://console.developers.google.com/apis/dashboard?project=tidy-way-301717&folder=&organizationId=>
   - Crear un nuevo proyecto
@@ -124,5 +124,7 @@ Para la primera parte de la practica.
   - Ir a Credenciales y copiar clave de nuestra api
 - Dentro de Values/google_maps_api.xml pegar la clave
 - Llamar a la Activity
+- Dentro de la Activity .kt escribir el codigo en particular
   - Modificar Latitud,longitud
   - Modificar zoom
+  - Modificar icono
