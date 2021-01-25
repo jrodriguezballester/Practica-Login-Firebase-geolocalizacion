@@ -128,3 +128,7 @@ Para la primera parte de la practica.
   - Modificar Latitud,longitud
   - Modificar zoom
   - Modificar icono
+
+### Localizacion en tiempo real
+
+- Se han implementado dos codigos distintos, para probar en un dispositivo a ver que resultado dan

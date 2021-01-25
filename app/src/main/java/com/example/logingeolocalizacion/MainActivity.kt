@@ -25,7 +25,11 @@ class MainActivity : AppCompatActivity() {
         }
         // Ir a Ubicacion real
         buttonMapReal.setOnClickListener {
-            val intent = Intent(this, LocalizacionFijaActivity::class.java);
+            val intent = Intent(this, MapsActivity1::class.java);
+            startActivity(intent)
+        }
+        buttonMapReal2.setOnClickListener {
+            val intent = Intent(this, MapsActivity2::class.java);
             startActivity(intent)
         }
     }

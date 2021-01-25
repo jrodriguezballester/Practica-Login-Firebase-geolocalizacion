@@ -48,7 +48,7 @@ class AuthActivity : AppCompatActivity() {
                 recursos.mostrarAviso1(this, "Aviso", "El correo o la contraseña son incorrentos")
             }
         }
-        loginButton.setOnClickListener {
+    /*    loginButton.setOnClickListener {
             var myEmail = emailEditText.text.toString()
             var myPassword = passWordEditText.text.toString()
             var recursos = Recursos()
@@ -72,7 +72,10 @@ class AuthActivity : AppCompatActivity() {
                 // Correo o Contraseña no valido mostrar ventana
                 recursos.mostrarAviso1(this, "Aviso", "El correo o la contraseña son incorrentos")
             }
-        }
+        } */
+   loginButton.setOnClickListener {
+       continuarApp()
+   }
     }
 
     public fun continuarApp() {

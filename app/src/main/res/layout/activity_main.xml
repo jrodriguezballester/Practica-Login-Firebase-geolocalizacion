@@ -36,5 +36,15 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Localizacion en tiempo real" />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="18dp" />
+        <Button
+            android:id="@+id/buttonMapReal2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Otra Localizacion en tiempo real" />
+
+
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

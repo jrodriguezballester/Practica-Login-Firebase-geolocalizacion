@@ -30,8 +30,14 @@
             android:value="@string/google_maps_key" />
 
         <activity
+            android:name=".MapsActivity2"
+            android:label="@string/title_activity_maps2"></activity>
+        <activity
+            android:name=".MapsActivity1"
+            android:label="@string/title_activity_maps1" />
+        <activity
             android:name=".LocalizacionFijaActivity"
-            android:label="@string/title_activity_localizacion_fija"></activity>
+            android:label="@string/title_activity_localizacion_fija" />
         <activity android:name=".MainActivity" />
         <activity android:name=".AuthActivity">
             <intent-filter>
