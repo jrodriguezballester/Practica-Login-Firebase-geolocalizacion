@@ -24,17 +24,17 @@
             android:layout_width="match_parent"
             android:layout_height="18dp" />
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/buttonMapFijo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Button" />
+            android:text="Localizacion Fija" />
         <Space
             android:layout_width="match_parent"
             android:layout_height="18dp" />
         <Button
-            android:id="@+id/button3"
+            android:id="@+id/buttonMapReal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Button" />
+            android:text="Localizacion en tiempo real" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -99,3 +99,30 @@ Para la primera parte de la practica.
 - Boton Log Out
   - Desconecta (singOut) de Firebase
   - Llamamos a la AuthActivity (mejor que onBackPressed())
+
+### Localizacion Fija
+
+- Crear layout: New layout-->Google-->Google Maps Activity
+
+  Esto crea
+  - Un Activity
+  - Un layout
+  - Values/google_maps_api.xml
+- Ir a google Api Console
+  <https://console.developers.google.com/apis/dashboard?project=tidy-way-301717&folder=&organizationId=>
+  - Crear un nuevo proyecto
+  - Ir Credenciales-->Crear credenciales-->Clave de API-->Restringir Clave
+
+  En la siguiente pantalla
+  - Poner un nombre (no es obligatorio)
+  - Apps de Android
+  - Agregar un Elemento (Datos en Values/google_maps_api.xml)
+    - nombre del paquete
+    - firma SHA-1
+  - Guardar
+  - Ir a Panel y habilitar Apis
+  - Ir a Credenciales y copiar clave de nuestra api
+- Dentro de Values/google_maps_api.xml pegar la clave
+- Llamar a la Activity
+  - Modificar Latitud,longitud
+  - Modificar zoom
