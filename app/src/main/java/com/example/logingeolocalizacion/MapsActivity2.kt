@@ -14,6 +14,8 @@ import com.google.android.gms.maps.OnMapReadyCallback
 import com.google.android.gms.maps.SupportMapFragment
 import com.google.android.gms.maps.model.LatLng
 import com.google.android.gms.maps.model.Marker
+import kotlin.contracts.Returns
+
 
 class MapsActivity2 : AppCompatActivity(), OnMapReadyCallback, GoogleMap.OnMarkerClickListener {
 
@@ -29,8 +31,9 @@ class MapsActivity2 : AppCompatActivity(), OnMapReadyCallback, GoogleMap.OnMarke
         val mapFragment = supportFragmentManager
             .findFragmentById(R.id.map) as SupportMapFragment
         mapFragment.getMapAsync(this)
-
+        title="Tu ubicación"
         fusedLocationProviderClient = LocationServices.getFusedLocationProviderClient(this)
+
     }
 
 
@@ -38,11 +41,12 @@ class MapsActivity2 : AppCompatActivity(), OnMapReadyCallback, GoogleMap.OnMarke
         mMap = googleMap
         mMap.setOnMarkerClickListener(this)
         mMap.uiSettings.isZoomControlsEnabled = true
-
+        mMap.mapType = GoogleMap.MAP_TYPE_HYBRID
         setUpMap()
     }
 
     private fun setUpMap() {
+
         if (ActivityCompat.checkSelfPermission(
                 this,
                 Manifest.permission.ACCESS_FINE_LOCATION
@@ -51,25 +55,24 @@ class MapsActivity2 : AppCompatActivity(), OnMapReadyCallback, GoogleMap.OnMarke
                 Manifest.permission.ACCESS_COARSE_LOCATION
             ) != PackageManager.PERMISSION_GRANTED
         ) {
-
             return
         }
+
         // capa de posicion
         mMap.isMyLocationEnabled = true
         // Se llama cada vez que sucede algo
-        fusedLocationProviderClient.lastLocation.addOnSuccessListener(this) { location ->
-           // cuando devuelve la posicion, esta es la ultima y la mostramos en Maps
-            if (location != null) {
-                lastLocation = location
-                var currentLatLong = LatLng(location.latitude, location.longitude)
-                mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(currentLatLong,13F) )
-
+        fusedLocationProviderClient.lastLocation.addOnSuccessListener { location: Location? ->
+                // Got last known location. In some rare situations this can be null. // cuando devuelve la posicion, esta es la ultima y la mostramos en Maps
+                if (location != null) {
+                    lastLocation = location
+                    var currentLatLong = LatLng(location.latitude, location.longitude)
+                    mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(currentLatLong, 12F))
+                }
             }
-        }
-
     }
 
     override fun onMarkerClick(p0: Marker?): Boolean {
         TODO("Not yet implemented")
+        return false
     }
 }

@@ -10,6 +10,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        title="Principal"
         // Logout
         logOutButton.setOnClickListener {
             FirebaseAuth.getInstance().signOut()
@@ -25,12 +26,9 @@ class MainActivity : AppCompatActivity() {
         }
         // Ir a Ubicacion real
         buttonMapReal.setOnClickListener {
-            val intent = Intent(this, MapsActivity1::class.java);
-            startActivity(intent)
-        }
-        buttonMapReal2.setOnClickListener {
             val intent = Intent(this, MapsActivity2::class.java);
             startActivity(intent)
         }
+
     }
 }

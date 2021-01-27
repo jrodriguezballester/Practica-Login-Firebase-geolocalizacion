@@ -21,6 +21,7 @@ class LocalizacionFijaActivity : AppCompatActivity(), OnMapReadyCallback {
         val mapFragment = supportFragmentManager
             .findFragmentById(R.id.map) as SupportMapFragment
         mapFragment.getMapAsync(this)
+        title="Tu casa"
     }
 
     override fun onMapReady(googleMap: GoogleMap) {

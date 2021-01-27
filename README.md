@@ -4,7 +4,12 @@
 
 <https://github.com/jrodriguezballester/Practica-Login-Firebase-geolocalizacion.git>
 
-## Práctica 6 - Firebase Authenticator & Geolocalización
+### Usuario Registrado
+
+email: ejemplo@ejemplo.com
+contraseña: Ejemplo1
+
+## <hr/> Práctica 6 - Firebase Authenticator & Geolocalización
 
 En esta práctica, vamos a conocer las ventajas que nos proporciona Firebase. Para ello se
 propone la visualización de los vídeos disponibles en el área de recursos del módulo de
@@ -53,9 +58,7 @@ parte del de logout.
 Estos dos botones nos permitirán, en primer lugar mostrar una ubicación por defecto, la que
 cada uno de vosotros elija. El segundo botón mostrará nuestra ubicación en tiempo real.
 
-<hr/>
-
-## Solucion (paso a paso)
+## <hr/>Solucion (paso a paso)
 
 ### - Añadir Firebase
 
@@ -131,4 +134,23 @@ Para la primera parte de la practica.
 
 ### Localizacion en tiempo real
 
-- Se han implementado dos codigos distintos, para probar en un dispositivo a ver que resultado dan
+- Se crea una FusedLocationProviderClient;
+- Llamamos a su metodo getLastLocation () para obtener la posicion
+- mostramos la posicion
+
+## Imagenes
+
+![autentificacion](capturas/cap1.png)
+
+![Inicio](capturas/cap2.png)
+
+![Tu casa](capturas/cap3.png)
+
+![Ubicacion](capturas/cap4.png)
+
+### Observaciones y mejoras al probar en dispositivo fisico
+
+- Se ha modificado el SDK minimo, al API 22 del dispositivo movil
+- Sin GPS no localiza anuque tenga internet
+- No pregunta por la utilizacion de GPS/datos
+- Mejoras de presentacion (icono,toolbar,diseño,...)
