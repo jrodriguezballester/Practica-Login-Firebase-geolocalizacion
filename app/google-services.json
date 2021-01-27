@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "415484125227",
+    "project_id": "loginygeolocalizacion",
+    "storage_bucket": "loginygeolocalizacion.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:415484125227:android:f9a9fbc897ff9a9e3c4a6e",
+        "android_client_info": {
+          "package_name": "com.example.logingeolocalizacion"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "415484125227-54ph1m72db46qvovhbco2159lp1kbe0g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBOmPr5My5-5b8pn-CO0nnHvEfqbEwgkTY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "415484125227-54ph1m72db46qvovhbco2159lp1kbe0g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
